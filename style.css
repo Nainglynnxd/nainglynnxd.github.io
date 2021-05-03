@@ -1,0 +1,141 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Delius", cursive;
+	font-size: 62.5%;
+}
+@media only screen and (max-width: 42.88em) {
+	body {
+		font-size: 50%;
+	}
+}
+
+.container {
+	margin: 0 auto;
+	padding: 3rem;
+	max-width: 80rem;
+	background-color: #faf9f9;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	align-content: center;
+}
+@media only screen and (max-width: 77.5em) {
+	.container {
+		flex-direction: column;
+		margin: 0;
+	}
+}
+@media only screen and (max-width: 42.88em) {
+	.container {
+		max-width: 100%;
+		width: 100%;
+		margin: 0;
+	}
+}
+.container__left {
+	flex: 0 1 40%;
+}
+@media only screen and (max-width: 77.5em) {
+	.container__left {
+		flex: 1;
+	}
+}
+.container__left-name {
+	font-size: 3rem;
+	letter-spacing: 0.1rem;
+	margin-bottom: 1.5rem;
+}
+.container__left-image {
+	height: 30rem;
+	width: 30rem;
+	border-radius: 20px;
+	background-image: url(winely.jpg);
+	background-size: cover;
+}
+@media only screen and (max-width: 42.88em) {
+	.container__left-image {
+		height: 21.5rem;
+		width: 21.5rem;
+	}
+}
+.container__right {
+	display: flex;
+	flex-direction: column;
+	flex: 0 1 50%;
+	align-items: center;
+	justify-content: center;
+}
+@media only screen and (max-width: 77.5em) {
+	.container__right {
+		margin-top: 2rem;
+		flex: 1;
+	}
+}
+.container__right-list {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 0.6rem;
+}
+.container .paragraph {
+	text-align: center;
+	line-height: 1.5;
+}
+.container .hello {
+	margin-top: 4rem;
+	font-size: 5rem;
+}
+@media only screen and (max-width: 42.88em) {
+	.container .hello {
+		margin-top: 1.5rem;
+		font-size: 3rem;
+	}
+}
+.container .name,
+.container .job {
+	font-size: 3.5rem;
+}
+@media only screen and (max-width: 42.88em) {
+	.container .name,
+	.container .job {
+		font-size: 2.25rem;
+	}
+}
+.container .name span,
+.container .job span {
+	color: red;
+}
+.container .list-link {
+	text-decoration: none;
+	font-size: 2.8rem;
+	color: #000;
+	margin: 0 2.2rem;
+}
+@media only screen and (max-width: 42.88em) {
+	.container .list-link {
+		font-size: 2rem;
+		margin: 0 0.4rem;
+	}
+}
+.container .socials {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 2rem;
+}
+.container .icons {
+	height: 4rem;
+	width: 4rem;
+	margin: 0 2rem;
+}
+@media only screen and (max-width: 42.88em) {
+	.container .icons {
+		height: 2rem;
+		width: 2rem;
+	}
+}
